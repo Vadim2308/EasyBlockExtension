@@ -1,43 +1,23 @@
-import { UiButton } from "@/shared/ui/ui-button";
-import { UiTextField } from "@/shared/ui/ui-text-field";
-import { UiSelectField } from "@/shared/ui/ui-select-field";
-import { UiLink } from "@/shared/ui/ui-link";
-import { UiSpinner } from "@/shared/ui/ui-spinner";
-import { UiLogo } from "@/shared/ui/ui-logo";
 import { UiHeader } from "@/shared/ui/ui-header";
-import { SignOutButton } from "@/features/auth";
 import { useSessionQuery } from "@/entities/session/queries";
+import { ToggleBlockingButton } from "@/features/toggle-blocking";
+import { Profile } from "@/widgets/profile";
 
 export default function HomePage() {
   const { data } = useSessionQuery();
   return (
-    <main className={`min-h-screen`}>
-      <UiHeader
-        right={
-          <div>
-            {data?.email}
-            <SignOutButton />
-          </div>
-        }
-      />
-      <UiButton variant="primary">Hey</UiButton>
-      <UiButton variant="secondary">Hey</UiButton>
-      <UiButton variant="outlined">Hey</UiButton>
-      <UiButton disabled variant="outlined">
-        Hey
-      </UiButton>
-      <UiTextField
-        label="Text field"
-        inputProps={{ placeholder: "Enter name" }}
-      />
-      <UiTextField error="error" inputProps={{ placeholder: "Enter name" }} />
-      <UiSelectField
-        selectProps={{ placeholder: "Enter name" }}
-        options={[{ label: "label", value: "1" }]}
-      />
-      <UiLink href="/data">Some link</UiLink>
-      <UiSpinner className="text-teal-600 w-20 h-20" />
-      <UiLogo />
-    </main>
+    <div className={`min-h-screen flex flex-col`}>
+      <UiHeader right={<Profile />} />
+      <div className="grid grid-cols-[200px_1fr]">
+        <aside className="px-5 pt-10">
+          <ToggleBlockingButton />
+        </aside>
+        <main className="pt-10 px-5">
+          <h1 className="text-2xl mb-8">Block list</h1>
+          {/*<AddBlockItemForm />*/}
+          {/*<BlockList className="mt-3" />*/}
+        </main>
+      </div>
+    </div>
   );
 }
