@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { PropsWithRef, SelectHTMLAttributes, useId } from "react";
+import { SelectHTMLAttributes, useId } from "react";
 
 export type UiSelectOption = {
   value: string;
@@ -10,7 +10,7 @@ export type UiSelectFieldProps = {
   className?: string;
   label?: string;
   error?: string;
-  selectProps?: PropsWithRef<SelectHTMLAttributes<HTMLSelectElement>>;
+  selectProps?: SelectHTMLAttributes<HTMLSelectElement>;
   options?: UiSelectOption[];
 };
 
