@@ -1,5 +1,5 @@
-import { useSessionQuery } from "@/entities/session/queries";
 import { SignOutButton } from "@/features/auth";
+import { useSessionQuery } from "@/entities/session/queries";
 
 export function Profile() {
   const { data: session } = useSessionQuery();

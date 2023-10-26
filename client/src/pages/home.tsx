@@ -1,7 +1,7 @@
-import { UiHeader } from "@/shared/ui/ui-header";
-import { ToggleBlockingButton } from "@/features/toggle-blocking";
 import { Profile } from "@/widgets/profile";
 import { AddBlockItemForm, BlockList } from "@/features/block-list";
+import { ToggleBlockingButton } from "@/features/toggle-blocking";
+import { UiHeader } from "@/shared/ui/ui-header";
 
 export default function HomePage() {
   return (

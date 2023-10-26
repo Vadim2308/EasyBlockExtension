@@ -1,5 +1,5 @@
-import { authControllerGetSessionInfo } from "@/shared/api/generated";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { authControllerGetSessionInfo } from "@/shared/api/generated";
 
 const sessionKey = ["session"];
 

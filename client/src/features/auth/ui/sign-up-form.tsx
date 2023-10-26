@@ -1,8 +1,8 @@
-import { ROUTES } from "@/shared/constants/routes";
+import { ROUTES } from "@/shared/constants";
 import { UiButton } from "@/shared/ui/ui-button";
 import { UiLink } from "@/shared/ui/ui-link";
 import { UiTextField } from "@/shared/ui/ui-text-field";
-import { useSignUpForm } from "../model/use-sign-up-form";
+import { useSignUpForm } from "../model";
 
 export function SignUpForm() {
   const { handleSubmit, isLoading, register, errorMessage } = useSignUpForm();

@@ -1,6 +1,6 @@
-import { UiTextField } from "@/shared/ui/ui-text-field";
-import { useBlockItems } from "../model/use-block-items";
 import { UiSpinner } from "@/shared/ui/ui-spinner";
+import { UiTextField } from "@/shared/ui/ui-text-field";
+import { useBlockItems } from "../model";
 import { BlockItem } from "./block-item";
 
 export function BlockList({ className }: { className?: string }) {

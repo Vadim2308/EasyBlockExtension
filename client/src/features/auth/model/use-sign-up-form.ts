@@ -1,8 +1,8 @@
-import { authControllerSignUp } from "@/shared/api/generated";
-import { ROUTES } from "@/shared/constants/routes";
 import { useMutation } from "@tanstack/react-query";
 import { useRouter } from "next/router";
 import { useForm } from "react-hook-form";
+import { ROUTES } from "@/shared";
+import { authControllerSignUp } from "@/shared/api/generated";
 
 export function useSignUpForm() {
   const router = useRouter();

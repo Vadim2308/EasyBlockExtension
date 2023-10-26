@@ -1,6 +1,6 @@
 import { SignUpForm } from "@/features/auth";
+import { UiFormPageLayout } from "@/shared/ui";
 import { UiHeader } from "@/shared/ui/ui-header";
-import { UiFormPageLayout } from "@/shared/ui/layouts/ui-form-page-layout";
 
 export const SignUpPage = () => {
   return (

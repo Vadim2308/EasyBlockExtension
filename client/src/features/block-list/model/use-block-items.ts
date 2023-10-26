@@ -1,6 +1,6 @@
+import { useState } from "react";
 import { useBlockListQuery } from "@/entities/block-list";
 import { useDebouncedValue } from "@/shared/lib/react-std";
-import { useState } from "react";
 
 export function useBlockItems() {
   const [q, setQ] = useState("");

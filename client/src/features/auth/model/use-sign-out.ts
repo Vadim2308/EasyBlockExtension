@@ -1,8 +1,8 @@
-import { useResetSession } from "@/entities/session/queries";
-import { authControllerSignOut } from "@/shared/api/generated";
-import { ROUTES } from "@/shared/constants/routes";
 import { useMutation } from "@tanstack/react-query";
 import { useRouter } from "next/router";
+import { useResetSession } from "@/entities/session/queries";
+import { authControllerSignOut } from "@/shared/api/generated";
+import { ROUTES } from "@/shared/constants";
 
 export function useSignOut() {
   const resetSession = useResetSession();

@@ -1,6 +1,7 @@
-import { AppProps } from "next/app";
-import { AppProvider } from "@/app/app-provider";
 import { Inter } from "next/font/google";
+// eslint-disable-next-line @conarti/feature-sliced/absolute-relative
+import { AppProps } from "next/app";
+import { AppProvider } from "./app-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 

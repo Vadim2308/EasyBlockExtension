@@ -1,8 +1,6 @@
-import { UiSelectField } from "@/shared/ui/ui-select-field";
-import { useAddBlockItemForm } from "../model/use-add-block-item-form";
-import { UiTextField } from "@/shared/ui/ui-text-field";
-import { UiButton } from "@/shared/ui/ui-button";
 import { AddBlockItemDtoType } from "@/shared/api/generated";
+import { UiSelectField, UiTextField, UiButton } from "@/shared/ui";
+import { useAddBlockItemForm } from "../model";
 
 const typeOptions = [
   { label: "WebSite", value: AddBlockItemDtoType.Website },

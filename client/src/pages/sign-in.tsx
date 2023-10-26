@@ -1,6 +1,5 @@
-import { UiHeader } from "@/shared/ui/ui-header";
-import { UiFormPageLayout } from "@/shared/ui/layouts/ui-form-page-layout";
 import { SignInForm } from "@/features/auth";
+import { UiFormPageLayout, UiHeader } from "@/shared/ui";
 
 export const SignInPage = () => {
   return (
